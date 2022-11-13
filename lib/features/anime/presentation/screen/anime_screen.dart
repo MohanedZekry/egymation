@@ -1,65 +1,16 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:egymation/core/style/colors.dart';
-import 'package:egymation/features/anime/presentation/component/anime_icon_component.dart';
-import 'package:egymation/features/anime/presentation/component/header_componenet.dart';
-import 'package:egymation/features/anime/presentation/component/popular_component.dart';
-import 'package:egymation/features/anime/presentation/component/up_coming_component.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../component/anime_icon.dart';
+import '../component/header_componenet.dart';
+import '../component/popular_component.dart';
+import '../component/up_coming_component.dart';
 
 class AnimeScreen extends StatelessWidget {
   const AnimeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      extendBodyBehindAppBar: true,
-      extendBody: true,
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-      ),
-      bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(14.0),
-            topRight: Radius.circular(14.0),
-          ),
-          color: backgroundColor,
-
-        ),
-        child: BottomNavigationBar(
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          selectedIconTheme: IconThemeData(
-            size: ((IconTheme.of(context).size)! * 1.3),
-          ),
-          backgroundColor: Colors.transparent,
-          type: BottomNavigationBarType.fixed,
-          currentIndex: 0,
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: AnimeIconComponent(icon: AnimeIcon.navSearch, size: 20),
-              label: 'Search',
-            ),
-            BottomNavigationBarItem(
-              icon: AnimeIconComponent(icon: AnimeIcon.navDownload),
-              label: 'Soon',
-            ),
-            BottomNavigationBarItem(
-              icon: AnimeIconComponent(icon: AnimeIcon.navAccount),
-              label: 'Profile',
-            ),
-          ],
-        ),
-      ),
-
-      body: SingleChildScrollView(
+    return SingleChildScrollView(
         physics: const BouncingScrollPhysics(
           parent: AlwaysScrollableScrollPhysics(),
         ),
@@ -153,10 +104,9 @@ class AnimeScreen extends StatelessWidget {
               ),
             ),
             const PopularComponent(),
-            const SizedBox(height: kBottomNavigationBarHeight+10)
+            const SizedBox(height: kBottomNavigationBarHeight+15)
           ],
         ),
-      ),
     );
   }
 }
