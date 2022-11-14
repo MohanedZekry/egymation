@@ -1,4 +1,3 @@
-import 'package:egymation/features/anime/presentation/screen/anime_screen.dart';
 import 'package:egymation/features/app/component/bottom_navigation_component.dart';
 import 'package:egymation/features/app/controller/navigation_cubit.dart';
 import 'package:flutter/material.dart';
@@ -15,12 +14,15 @@ class App extends StatelessWidget {
         extendBodyBehindAppBar: true,
         extendBody: true,
         appBar: AppBar(
-          //leading: SvgPicture.asset('assets/icons/egymation_logo.svg', height: 50, width: 50,),
           elevation: 0,
           backgroundColor: Colors.transparent,
         ),
         bottomNavigationBar: const BottomNavigationComponent(),
-        body: const AnimeScreen(),
+        body: BlocBuilder<NavigationCubit, NavigationState>(
+          builder: (context, state) {
+            return state.screenList[state.index];
+          },
+        ),
       ),
     );
   }

@@ -4,7 +4,14 @@ class NavigationState extends Equatable {
   final NavbarItem navbarItem;
   final int index;
 
-  const NavigationState(this.navbarItem, this.index);
+  final List<Widget> screenList = [
+    const AnimeScreen(),
+    const SearchScreen(),
+    const AnimeScreen(),
+    const SearchScreen(),
+  ];
+
+  NavigationState(this.navbarItem, this.index);
 
   @override
   List<Object> get props => [navbarItem, index];

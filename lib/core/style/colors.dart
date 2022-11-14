@@ -16,3 +16,10 @@ const backgroundColor = Color(0xff010001);
 const bottomNavColor = Color(0xff111111);
 
 const blueShadowColor = Color(0xff09dbff);
+const searchBackgroundColor = Color(0xff232222);
+const searchItemBackgroundColor = Color(0x813A3A3A);
+
+const gradientColorOne = Color(0xff1E0328);
+const gradientColorTwo = Color(0xff050C19);
+const gradientColorThree = Color(0xff1E0328);
+const gradientColorFour = Color(0xff1E0328);
