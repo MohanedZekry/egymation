@@ -16,7 +16,23 @@
   <img alt='Screenshot 1' src="Screenshots/3.png" width="40%"/>
 </p>
 
+## Libraries and Tools
 
+- BLoC  
+- Cubit
+- cupertino_icons 
+- Equatable 
+- Flutter_Bloc 
+- Formz
+- Service Locator
+- Dio
+- http
+- Dartz 
+- Intl
+- Shared_preferences 
+- Provider
+- Faker 
+- Mockito
 
 ## State Management (BLoC & Cubit)
 <p align="center">
