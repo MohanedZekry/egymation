@@ -38,3 +38,8 @@
 <p align="center">
 <img src="images/2.png" style="display: block; margin-left: auto; margin-right: auto; width: 75%;"/>
 </p>
+
+## Requirements✨
+- Any Operating System (ie. MacOS X, Linux, Windows)
+- Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
+- Some fingers to code 😂
