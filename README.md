@@ -7,6 +7,17 @@
  - Domain Layer
  - Data Layer
 
+## Screenshots
+
+<p align="center">
+  <img alt='Screenshot 1' src="Screenshots/1.png" width="40%"/>
+  <img alt='Screenshot 2' src="Screenshots/2.png" width="37.7%"/>
+  <br/>
+  <img alt='Screenshot 1' src="Screenshots/3.png" width="40%"/>
+</p>
+
+
+
 ## State Management (BLoC & Cubit)
 <p align="center">
 <img src="images/2.png" style="display: block; margin-left: auto; margin-right: auto; width: 75%;"/>
