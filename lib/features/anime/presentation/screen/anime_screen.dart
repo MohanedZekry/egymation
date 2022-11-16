@@ -1,5 +1,8 @@
 import 'package:animate_do/animate_do.dart';
+import 'package:egymation/core/di/dependency_container.dart';
+import 'package:egymation/features/anime/presentation/controller/anime_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../component/header_componenet.dart';
 import '../component/popular_component.dart';
@@ -10,7 +13,9 @@ class AnimeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return BlocProvider(
+      create: (context) => getIt<AnimeBloc>()..add(GetAllAnimeEvent()),
+      child: SingleChildScrollView(
         physics: const BouncingScrollPhysics(
           parent: AlwaysScrollableScrollPhysics(),
         ),
@@ -38,8 +43,7 @@ class AnimeScreen extends StatelessWidget {
                       ),
                     ),
                     InkWell(
-                      onTap: () {
-                      },
+                      onTap: () {},
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Row(
@@ -80,8 +84,7 @@ class AnimeScreen extends StatelessWidget {
                       ),
                     ),
                     InkWell(
-                      onTap: () {
-                      },
+                      onTap: () {},
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Row(
@@ -104,9 +107,10 @@ class AnimeScreen extends StatelessWidget {
               ),
             ),
             const PopularComponent(),
-            const SizedBox(height: kBottomNavigationBarHeight+15)
+            const SizedBox(height: kBottomNavigationBarHeight + 15)
           ],
         ),
+      ),
     );
   }
 }

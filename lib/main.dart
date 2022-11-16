@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'core/app_theme.dart';
+import 'core/di/dependency_container.dart';
+import 'core/network/dio_helper.dart';
 import 'features/app/app.dart';
 
-void main() {
+void main() async{
+
+  WidgetsFlutterBinding.ensureInitialized();
+  ServiceLocator().init();
+  DioHelper.init();
+
   runApp(const MyApp());
 }
 
