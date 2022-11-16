@@ -1,6 +1,6 @@
 class Constants{
 
-  static const baseURL = 'https://admission.must.edu.eg/Egymation/api/';
+  static const baseURL = 'API_URL';
 
   // END POINTS PATH
   /* now_playing?api_key={API_KEY}&page=1 */
