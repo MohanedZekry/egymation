@@ -7,7 +7,43 @@
  - Domain Layer
  - Data Layer
 
+## Screenshots
+
+<p align="center">
+  <img alt='Screenshot 1' src="Screenshots/1.png" width="40%"/>
+  <img alt='Screenshot 2' src="Screenshots/2.png" width="37.7%"/>
+  <br/>
+  <img alt='Screenshot 1' src="Screenshots/3.png" width="40%"/>
+</p>
+
+## Libraries and Tools
+
+- BLoC  
+- Cubit
+- cupertino_icons 
+- Equatable 
+- Flutter_Bloc 
+- Formz
+- Service Locator
+- Dio
+- http
+- Dartz 
+- Intl
+- Shared_preferences 
+- Provider
+- Faker 
+- Mockito
+
+## API
+- API - .NET CORE (URL SOON)
+
+
 ## State Management (BLoC & Cubit)
 <p align="center">
 <img src="images/2.png" style="display: block; margin-left: auto; margin-right: auto; width: 75%;"/>
 </p>
+
+## Requirements✨
+- Any Operating System (ie. MacOS X, Linux, Windows)
+- Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
+- Some fingers to code 😂
