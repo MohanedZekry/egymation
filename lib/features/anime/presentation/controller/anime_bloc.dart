@@ -34,5 +34,6 @@ class AnimeBloc extends Bloc<AnimeEvent, AnimeState> {
       emit(state.copyWith(
         index: event.index
       ));
+
   }
 }
